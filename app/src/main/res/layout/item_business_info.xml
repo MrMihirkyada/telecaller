@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:backgroundTint="@android:color/white"
+    app:cardCornerRadius="@dimen/_10sdp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Initials Circle or Profile Icon -->
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:text="S"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!-- Content Layout -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
+
+            <!-- Phone Number -->
+            <TextView
+                android:id="@+id/textViewContactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5465756788"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Additional Details -->
+            <TextView
+                android:id="@+id/textViewCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="company name"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtNotes"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Notes "-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="14sp" />-->
+
+            <!-- Scheduled Time and Call Notes -->
+            <TextView
+                android:id="@+id/textViewEmailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email id"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewBusinessType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="business type"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Edit and Call Icons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imgEdit"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:padding="8dp"-->
+<!--                android:src="@drawable/edit"-->
+<!--                app:tint="@android:color/holo_blue_dark" />-->
+
+            <ImageView
+                android:id="@+id/imgCall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:src="@drawable/calls"
+                app:tint="@android:color/holo_blue_dark" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    <!--<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_margin="8dp"-->
+    <!--    android:background="@color/white"-->
+    <!--    app:cardCornerRadius="8dp"-->
+    <!--    app:cardElevation="4dp">-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="16dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            &lt;!&ndash; Top Name &ndash;&gt;-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/textViewName"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="6dp"-->
+    <!--                android:text="Name"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:textStyle="bold" />-->
+
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textStatus"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="6dp"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textColor="@color/DarkOrange"-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        &lt;!&ndash; Contact No &ndash;&gt;-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="4dp"-->
+    <!--            android:text="Contact No"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="13sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textViewContactNo"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="10dp"-->
+    <!--            android:text="Contact No"-->
+    <!--            android:textColor="@android:color/holo_red_dark"-->
+    <!--            android:textSize="14sp" />-->
+
+    <!--        &lt;!&ndash; Email ID &ndash;&gt;-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="4dp"-->
+    <!--            android:text="Email ID"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="13sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textViewEmailId"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="10dp"-->
+    <!--            android:text="Email ID"-->
+    <!--            android:textColor="@color/gray"-->
+    <!--            android:textSize="14sp" />-->
+
+    <!--        &lt;!&ndash; Company Name &ndash;&gt;-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="4dp"-->
+    <!--            android:text="Company Name"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="13sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textViewCompanyName"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="10dp"-->
+    <!--            android:text="Company Name"-->
+    <!--            android:textColor="@color/gray"-->
+    <!--            android:textSize="14sp" />-->
+
+    <!--        &lt;!&ndash; Website &ndash;&gt;-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="4dp"-->
+    <!--            android:text="Website"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="13sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textViewWebsite"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="10dp"-->
+    <!--            android:text="Website"-->
+    <!--            android:textColor="@color/gray"-->
+    <!--            android:textSize="14sp" />-->
+
+    <!--        &lt;!&ndash; Business Type &ndash;&gt;-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="4dp"-->
+    <!--            android:text="Business Type"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="13sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textViewBusinessType"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            android:text="Business Type"-->
+    <!--            android:textColor="@color/gray"-->
+    <!--            android:textSize="14sp" />-->
+
+    <!--    </LinearLayout>-->
+    <!--</androidx.cardview.widget.CardView>-->

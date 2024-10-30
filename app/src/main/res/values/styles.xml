@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomSheetStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <!-- Optional: Customize the background to have rounded corners -->
+        <item name="bottomSheetStyle">@style/CustomBottomSheetShape</item>
+    </style>
+
+    <style name="CustomBottomSheetShape">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.BottomSheet</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.BottomSheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+</resources>

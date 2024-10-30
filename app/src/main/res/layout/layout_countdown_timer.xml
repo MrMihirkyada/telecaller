@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Dialing text -->
+        <TextView
+            android:id="@+id/dialing_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dialling next number in"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <!-- Countdown Circle -->
+        <TextView
+            android:id="@+id/textViewCountdown"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialing_text"
+            android:layout_marginTop="8dp"
+            android:text="8698111112"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_number"
+            android:layout_marginTop="4dp"
+            android:text="Name: Test"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- Notes -->
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:layout_below="@id/name_text"
+            android:gravity="center_horizontal">
+
+            <!-- Cancel Button -->
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#DEE3E6"
+                android:text="CANCEL"
+                android:textColor="@color/black"
+                android:textAllCaps="true" />
+
+<!--            &lt;!&ndash; Skip Number Button &ndash;&gt;-->
+<!--            <Button-->
+<!--                android:id="@+id/skip_button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:backgroundTint="#DAB7B5"-->
+<!--                android:text="SKIP NUMBER"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textAllCaps="true" />-->
+
+<!--            &lt;!&ndash; Load Another List Button &ndash;&gt;-->
+<!--            <Button-->
+<!--                android:id="@+id/load_button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:backgroundTint="#AEBFD1"-->
+<!--                android:text="LOAD ANOTHER LIST"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textAllCaps="true" />-->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    &lt;!&ndash; Countdown Timer Display &ndash;&gt;-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/textViewCountdown"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_20sdp"-->
+    <!--        android:textSize="@dimen/_12ssp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="Countdown: 00:00" />-->
+    <!--</LinearLayout>-->
+
+</androidx.cardview.widget.CardView>
